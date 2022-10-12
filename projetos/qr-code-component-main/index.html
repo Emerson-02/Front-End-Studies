@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Outfit', sans-serif;
+    }
+    
+    body {
+      /*display: flex;*/
+      background-color: hsl(212, 45%, 89%);
+    }
+    
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 50px;
+    }
+
+    .base {
+      background-color: white;
+      /*border: 2px solid blue;*/
+      border-radius: 10px;
+      /*margin: 0;
+      padding: 0;*/
+      width: 310px;
+      box-shadow: 5px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .forte { 
+      font-size: 22px;
+      color: hsl(218, 44%, 22%);
+      margin: 15px;
+      margin-top: 0;
+      /*border: 2px solid blue;*/
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .fraco {
+      color: hsl(220, 15%, 55%);
+      margin: 15px;
+      /*border: 2px solid blue;*/
+      text-align: center;
+    }
+
+    .img {
+      border-radius: 10px;
+      margin: 15px;
+      padding: 0px;
+      /*border: 2px solid blue;*/
+    }
+    
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+      margin-top: 50px;
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="base">
+      <img src="/projetos/qr-code-component-main/images/image-qr-code.png" alt="qr code" width="280" height="280" class="img">
+    
+      <p class="forte">Improve your front-end skills by building projects</p> 
+    
+      <p class="fraco">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p> 
+    </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Emerson</a>.
+    </div>
+  </div>
+</body>
+</html>

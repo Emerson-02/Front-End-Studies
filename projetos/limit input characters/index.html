@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limit Input Characters</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/solid.css">
+    <!--https://www.youtube.com/watch?v=RmhTNckxdwc&list=PLpwngcHZlPadhRwryAXw3mJWX5KH3T5L3&index=38-->
+    <!--https://www.codingnepalweb.com/limit-input-characters-using-html-css-javascript/-->
+</head>
+<body>
+    <div class="wrapper">
+        <form action="#">
+            <input type="text" placeholder="username" maxlength="16" required>
+            <i class="uis uis-at"></i>
+            <span class="counter">16</span>
+        </form>
+    </div>
+
+    <script>
+        const input = document.querySelector("form input"),
+        counter = document.querySelector("form .counter"),
+        maxLength = input.getAttribute("maxlength");
+
+        input.onkeyup = ()=>{
+            counter.innerText = maxLength - input.value.length;
+        }
+    </script>
+</body>
+</html>

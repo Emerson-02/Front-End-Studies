@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    * {
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    body {
+      display: flex;
+      flex-direction: row;
+      background-color: hsl(216, 12%, 8%);
+      color: white;
+      align-items: center;
+      width: 1440px;
+    }
+
+    .rating-start {
+      background-color: hsl(213, 19%, 18%);
+      align-items: center;
+      /*height: 500px;
+      width: 500px;*/
+      margin: 50px;
+      padding: 20px;
+      border-radius: 20px;
+      width: 400px;
+    }
+
+    .rate {
+      display: flex;
+      /*border: 5px solid red;*/
+      justify-content: space-between;
+      margin: 5px 0 5px 0;
+    }
+
+    .rate div {
+      background-color: hsl(219, 9%, 35%);
+      /*border: 2px solid blue;*/
+      padding: 8px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50px;
+      text-align: center;
+      color: hsl(217, 12%, 63%);
+    }
+
+    .rate div:hover {
+      background-color: green;
+    }
+
+    .title {
+      color: hsl(0, 0%, 100%);
+      border: 2px solid blue;
+    }
+
+    .description {
+      border: 2px solid blue;
+      color: hsl(217, 12%, 63%);
+    }
+
+    .btn {
+      background-color: orange;
+      border-style: none;
+      padding: 7px;
+      border-radius: 20px;
+      width: 500px;
+      color: hsl(0, 0%, 100%);
+    }
+
+    .btn:hover {
+      background-color: hsl(219, 9%, 35%);
+    }
+
+    div#rating-final {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    
+
+    function clicar(){
+      let a = document.getElementById('rating-start')
+      let b = document.getElementById('rating-final')
+      a.style.display = "none";
+      b.style.display = "flex";
+    }
+
+  </script>
+
+  <!-- Rating state start -->
+<div class="rating-start" id="rating-start">
+  
+    <h1 class="title">How did we do?</h1>
+
+  
+    <p class="description">Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+  
+    
+  <div class="rate">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+  </div>
+
+  <button type="submit" class="btn" id="btn" onclick="clicar()">Submit</button>  
+  
+</div>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <div id="rating-final">
+    You selected <!-- Add rating here --> out of 5
+  
+    Thank you!
+  
+    We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!
+  </div>
+
+  <!-- Thank you state end -->
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Emerson</a>.
+  </div>
+
+
+</body>
+</html>
