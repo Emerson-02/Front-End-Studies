@@ -1,0 +1,46 @@
+
+.esqcima{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+
+.esqbaixo{
+    background-color: rgb(13, 211, 13);
+    height: 100px;
+    width: 100px;
+}
+
+.dircima{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+}
+
+.dirbaixo{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    
+}
+
+.all {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.esq {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.dir {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
