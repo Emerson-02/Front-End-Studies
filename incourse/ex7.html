@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true" alt="apagada" style="display: block;" onmouseenter="acender()"  id="apagada">
+    <img src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true" alt="acesa" style="display: none;" onmouseout="apagar()" id="acesa">
+
+    <script>
+        function acender(){
+            document.getElementById("apagada").style.display = 'none'
+            document.getElementById("acesa").style.display = 'block'
+        }
+
+        function apagar(){
+            document.getElementById("acesa").style.display = 'none'
+            document.getElementById("apagada").style.display = 'block'
+        }
+
+    </script>
+</body>
+</html>

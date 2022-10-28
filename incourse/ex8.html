@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input maxlength="11" name='name' id="cpf" placeholder="digite aqui" onchange='criar()'>
+    <input type="text" name="show" id="show" placeholder="saída" >
+
+    <script>
+        //let str = document.getElementById('cpf')
+        //let valor = str.value
+
+        let str = document.querySelector(`[name="${name}"]`).value
+        console.log(typeof(str))
+        console.log(str)
+    
+        
+        function criar(){
+            /*alert(str.value)
+            console.log(typeof(str))
+            console.log(str.value)
+            console.log(valor)*/
+            
+        }
+
+        let txt = ''
+
+        for(i in valor){
+            txt += valor[i]
+            if(txt.length == 3 || txt.length == 7){
+                txt += '.'
+            }
+            if(txt.length == 11){
+                txt += '-'
+            }
+            console.log(txt)
+        }
+
+        console.log(typeof(txt))
+
+        document.getElementById('show').innerText = txt
+
+        /*
+            let str = "86774824072"
+            let txt = ''
+
+            for(i in str){
+                txt += str[i]
+                if(txt.length == 3 || txt.length == 7){
+                txt += '.'
+                }
+                if(txt.length == 11){
+                    txt += '-'
+                }
+
+            }
+
+            console.log(txt)
+        */
+    </script>
+</body>
+</html>
